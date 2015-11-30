@@ -34,6 +34,7 @@
 
 		.talk-title { font-weight: bold; font-size: 18px; padding-bottom: 10px;}
 		.talk-abstract { padding-bottom: 10px; }
+		.talk-abstract p { padding-bottom: 0px; margin-bottom: 10px; }
 		.talk-bio { padding-bottom: 10px;}
 	   header a { color: white; }
 	   header a:hover { color: white; color: #8BD3FF;  }
@@ -175,11 +176,20 @@
 <div class='talk-abstract'>
 Over the past few years, we have built two large-scale computer systems for training neural networks, and then applied these systems to a wide variety of problems that have traditionally been very difficult for computers.  We have made significant improvements in the state-of-the-art in many of these areas, and our software systems and algorithms have been used by dozens of different groups at Google to train state-of-the-art models for speech recognition, image recognition, various visual detection tasks, language modeling, language translation, and many other tasks.  Our second-generation system, TensorFlow, has been designed and implemented based on what we have learned from building and using DistBelief, our first generation system.  The TensorFlow API and an initial implementation was released as an open-source project in November, 2015 (see <a href='http://www.tensorflow.org/'>tensorflow.org</a>).  In this talk, I'll discuss the design and implementation of TensorFlow, and discuss some future directions for improving the system.
 </div>
+<div class='talk-bio'>
+Bio:<br />Jeff joined Google in 1999 and is currently a Google Senior Fellow.  He currently works in Google's Research division, where he co-founded and leads Google's deep learning research team in Mountain View.  He has co-desiged/implemented multiple generations of Google's crawling, indexing, and query serving systems, and major pieces of Google's initial advertising and AdSense for Content systems.  He is also a co-designer and co-implementor of Google's distributed computing infrastructure, including the MapReduce, BigTable, Spanner, DistBelief and TensorFlow systems, protocol buffers, LevelDB, systems infrastructure for statistical machine translation, and a variety of internal and external libraries and developer tools.  He received a Ph.D. in Computer Science from the University of Washington in 1996, working with Craig Chambers on compiler techniques for object-oriented languages.  He is a Fellow of the ACM, a Fellow of the AAAS, a member of the U.S. National Academy of Engineering, and a recipient of the Mark Weiser Award and the ACM-Infosys Foundation Award in the Computing Sciences.
+</div>
 
 <h2 class='speaker'>
 	<a id="joey" class="anchor" href="#joey" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href='http://www.cs.berkeley.edu/%7Ejegonzal/'>Joseph Gonzalez (UC Berkeley)</a></h2>
 <div class='talk-title'>
-	TBA
+Intelligent Services: Serving Machine Learning
+</div>
+<div class='talk-abstract'>
+Machine learning has become the key component in building intelligent services and applications.  However, much of the focus in machine learning research and software systems is aimed at the design of increasingly sophisticated models, training algorithms, and large-scale systems for model training.  In this talk I will discuss the other and perhaps more important challenge machine learning systems: serving and maintaining trained models.  I will describe the machine learning life-cycle that spans beyond the fiction of training an isolated model on static data, to learning on changing data, competing models developed by multiple teams, and versioning.  I will characterize some of the unique challenges and opportunities of model serving in a low-latency and high-availability setting.  I will present mechanisms to enable models to compete and learn from feedback in real-time and discuss the opportunity to trade-off latency and accuracy.  I will present this work in the context of two systems, one being developed at UC Berkeley and another already in production at Dato Inc.
+</div>
+<div class='talk-bio'>
+Bio:<br />Joseph Gonzalez an assistant professor at UC Berkeley and co-founder of Dato Inc.  Joseph holds a PhD in Machine Learning from CMU where he created the GraphLab open-source graph processing system and a collection of tools for Graphical Model inference.  Joseph is part of the UC Berkeley AMPLab where he created, GraphX, the graph analytics framework in Apache Spark.
 </div>
 
 <h2 class='speaker'>
@@ -192,7 +202,14 @@ Over the past few years, we have built two large-scale computer systems for trai
 	<a id="mathias" class="anchor" href="#mathias" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://www.clear-lines.com">Mathias Brandewinder (Clear Lines Consulting)</a></h2>
 
 <div class='talk-title'>
-	TBA
+Functional Programming and Machine Learning: a natural fit
+</div>
+<div class='talk-abstract'>
+	<p>In the past decade, Functional Programming has evolved from a niche specialty into the mainstream. Modern programming languages such as F# or Scala have broadened adoption by demonstrating the practical benefits of functional techniques, and these ideas are progressively being incorporated into most traditional, well-established languages, such as C++ or Java.  </p>
+	<p>In this talk, we will discuss specifically why Functional Programming and Machine Learning are a great fit. Using live coding in F#, on real-world examples, we will demonstrate how classic algorithms can be expressed very clearly - and correctly - in a functional style, and how functional idioms such as pipes-and-filters enable effective data exploration. Finally, we will show how functional programming lends itself naturally to parallelization, allowing for large-scale data processing.</p>
+</div>
+<div class='talk-bio'>
+	Bio:<br />Mathias Brandewinder has been developing software professionally for about 10 years, with a focus on forecasting and risk analysis models.  He is a Microsoft F# MVP, and speaks regularly on functional programming and related topics at conferences worldwide. He is the author of "Machine Learning Projects for .NET Developers" (Apress), and the founder of Clear Lines Consulting. Mathias is based in San Francisco, blogs at <a href='http://www.clear-lines.com/blog/'>www.clear-lines.com/blog</a>, and can be found on Twitter as <a href='https://twitter.com/brandewinder'>@brandewinder</a>. He holds degrees in Business from ESSEC, Economics from University Paris X, and Operations Research from Stanford University.
 </div>
 <h2 class='speaker'>
 	<a id="roxana" class="anchor" href="#roxana" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://roxanageambasu.github.io/">Roxana Geambasu (Columbia University)</a></h2>
