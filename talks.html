@@ -67,6 +67,7 @@
 	   .mymenu { font-size: 22px; padding-top: 20px; }
 	   .menu-link {padding-right: 8px; padding-left: 8px;border-right: 1px solid #8BD3FF; }
 	   .menu-link-last {padding-right: 8px; padding-left: 8px; }
+	   .slides { padding-left: 10px; }
 
 	   header { padding-bottom: 5px; }
 	</style>
@@ -107,7 +108,7 @@
 	<a id="jeffdean" class="anchor" href="#jeffdean" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href='http://research.google.com/people/jeff/'>Jeff Dean (Google)</a></h2>
 
 <div class='talk-title'>
-	TensorFlow Overview and Future Directions <a href='slides/NIPS-Learning-Systems-Workshop-TensorFlow-Jeff-Dean.pdf'>Slide</a>
+	TensorFlow Overview and Future Directions <a href='slides/NIPS-Learning-Systems-Workshop-TensorFlow-Jeff-Dean.pdf' class='slides'>[Slides]</a>
 </div>
 <div class='talk-abstract'>
 Over the past few years, we have built two large-scale computer systems for training neural networks, and then applied these systems to a wide variety of problems that have traditionally been very difficult for computers.  We have made significant improvements in the state-of-the-art in many of these areas, and our software systems and algorithms have been used by dozens of different groups at Google to train state-of-the-art models for speech recognition, image recognition, various visual detection tasks, language modeling, language translation, and many other tasks.  Our second-generation system, TensorFlow, has been designed and implemented based on what we have learned from building and using DistBelief, our first generation system.  The TensorFlow API and an initial implementation was released as an open-source project in November, 2015 (see <a href='http://www.tensorflow.org/'>tensorflow.org</a>).  In this talk, I'll discuss the design and implementation of TensorFlow, and discuss some future directions for improving the system.
@@ -119,7 +120,7 @@ Bio:<br />Jeff joined Google in 1999 and is currently a Google Senior Fellow.  H
 <h2 class='speaker'>
 	<a id="joey" class="anchor" href="#joey" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href='http://www.cs.berkeley.edu/%7Ejegonzal/'>Joseph Gonzalez (UC Berkeley)</a></h2>
 <div class='talk-title'>
-Intelligent Services: Serving Machine Learning
+Intelligent Services: Serving Machine Learning <a href='slides/joseph_gonzalez_intelligent_services.pptx' class='slides'>[Slides]</a>
 </div>
 <div class='talk-abstract'>
 Machine learning has become the key component in building intelligent services and applications.  However, much of the focus in machine learning research and software systems is aimed at the design of increasingly sophisticated models, training algorithms, and large-scale systems for model training.  In this talk I will discuss the other and perhaps more important challenge machine learning systems: serving and maintaining trained models.  I will describe the machine learning life-cycle that spans beyond the fiction of training an isolated model on static data, to learning on changing data, competing models developed by multiple teams, and versioning.  I will characterize some of the unique challenges and opportunities of model serving in a low-latency and high-availability setting.  I will present mechanisms to enable models to compete and learn from feedback in real-time and discuss the opportunity to trade-off latency and accuracy.  I will present this work in the context of two systems, one being developed at UC Berkeley and another already in production at Dato Inc.
